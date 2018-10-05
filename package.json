@@ -1,0 +1,23 @@
+{
+  "name": "js-ipfs-talk-lab-week-2018",
+  "version": "1.0.0",
+  "description": "Lightning talk on JS IPFS for the Protocol Labs lab week 2018",
+  "main": "dist/index.html",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --public-url ./",
+    "test": "standard",
+    "deploy": "npm run build; npm run ipfs",
+    "ipfs": "ipfs add -r -Q dist"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^1.9.3",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "ipfs-css": "^0.5.2",
+    "tachyons": "^4.10.0"
+  }
+}

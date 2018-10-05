@@ -1,0 +1,58 @@
+@import "tachyons";
+@import "ipfs-css";
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  font-weight: lighter;
+  font-size: 60px;
+  font-family: avenir next, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  text-align: center;
+  color: white;
+  background: #0b3a53;
+  overflow:hidden;
+}
+
+section code {
+  font-family: "Envy Code R", "Courier New", Courier, monospace;
+}
+
+section img {
+  max-height: 100%;
+}
+
+section ul {
+  text-align: left;
+  max-width: 80%;
+  margin:0 auto;
+}
+
+h1, h2, h3, h4 {
+  margin:0;
+}
+
+#pulse {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-image: url(img/js-ipfs-tesselate.jpg);
+  background-size: 20%;
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0% {
+    background-size: 10%;
+  }
+  50% {
+    background-size: 50%;
+  }
+  100% {
+    background-size: 10%;
+  }
+}
