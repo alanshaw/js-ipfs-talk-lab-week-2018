@@ -1,4 +1,4 @@
-# JS IPFS - Lab Days 2018
+# JS IPFS - Lab Week 2018
 
 ## Getting started
 
